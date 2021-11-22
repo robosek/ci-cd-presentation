@@ -14,6 +14,8 @@ About CI/CD on real example
 ***
 
 ### About "great success" project (dark side)
+> "As A user when I enter the application I want to be able to check the weather"
+
 - Main product 
 - New feature request (Weather)
 - Two external consultants hired for this job
@@ -22,7 +24,7 @@ About CI/CD on real example
 - Unsatisfied customers stared to quit agreements
 - Company started to have real problems...
 
-> "15 days of coding may save you 1 day of event storming..."
+
 
 ***
 
@@ -43,8 +45,11 @@ Now some event storming is happening...
 Finally when event storming session is finished and all requirements are clear we can start implementation...
 
 ***
+### Delivery vs Deployment
+- Continuos delivery means make code available to be deployed.
+- Continuos deployment - when change pass the tests it's automatically deployed to customer. 
 
-
+***
 ### Why initially it failed? 
 - User story used as a requirement
 - No CD/CD means no code review, tests, possibility to quick revert changes and **no agility**
