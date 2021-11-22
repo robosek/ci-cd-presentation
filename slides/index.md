@@ -37,7 +37,7 @@ Two braves developers said they may know the solution, but they need to start it
 ### Event storming session
 Now some event storming is happening...
 
-![event_storming_picture]()
+![v1-es](images/v1-es-cicd.png)
 
 
 ***
@@ -66,8 +66,44 @@ Finally when event storming session is finished and all requirements are clear w
 
 ![Toggle](https://media.giphy.com/media/uTDdgSvpNvcrR9sydS/giphy.gif)
 
+---
+
+### Start with understanding the problem you're goin' to solve...
+Now some event storming is happening...
+
+![v2-es](images/v2-es-cicd.png)
+
 ***
 
+***
+
+### New feature - experimenting with something that might bring value
+- business doesn't yet know how it might work
+- it is a discovery process
+- in order to check if it makes sense, someone has an idea
+to test it using A/B method on real users
+
+---
+
+![buggy-code](images/buggy-code-question.jpg)
+
+---
+
+### Feature toggling to the rescue!
+
+---
+
+### And remember...
+
+---
+
+### ...Start next continuous journey with Event Storming
+
+***
+
+### Summary
+
+***
 ### The Reality of a Developer's Life 
 
 **When I show my boss that I've fixed a bug:**
