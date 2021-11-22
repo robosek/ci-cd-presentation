@@ -22,18 +22,31 @@ About CI/CD on real example
 - Unsatisfied customers stared to quit agreements
 - Company started to have real problems...
 
-> 15 days of coding may save you 1 day of event storming....
+> "15 days of coding may save you 1 day of event storming..."
 
 ***
 
 ### About "great success" project (there is hope)
 
-Two braves developers already hired in company said they may know the solution, but they need to start it from scratch....
+Two braves developers said they may know the solution, but they need to start it from scratch....
 
 ***
 
-### Why consultants failed? 
-- Bad interpretation of user story 
+### Event storming session
+Now some event storming is happening...
+
+![event_storming_picture]()
+
+
+***
+### It's time for implementation
+Finally when event storming session is finished and all requirements are clear we can start implementation...
+
+***
+
+
+### Why initially it failed? 
+- User story used as a requirement
 - No CD/CD means no code review, tests, possibility to quick revert changes and **no agility**
 
 ![When I show my boss that I've fixed a bug](http://www.topito.com/wp-content/uploads/2013/01/code-07.gif)
