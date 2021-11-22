@@ -52,7 +52,7 @@ Finally when event storming session is finished and all requirements are clear w
 ***
 ### Why initially it failed? 
 - User story used as a requirement
-- No CD/CD means no code review, tests, possibility to quick revert changes and **no agility**
+- No CI/CD means no code review, tests, possibility to quick revert changes and **no agility**
 
 ![When I show my boss that I've fixed a bug](http://www.topito.com/wp-content/uploads/2013/01/code-07.gif)
 
