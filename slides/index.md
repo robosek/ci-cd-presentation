@@ -47,7 +47,7 @@ Finally when event storming session is finished and all requirements are clear w
 ***
 ### Delivery vs Deployment
 - Continuos delivery means make code available to be deployed.
-- Continuos deployment - when change pass the tests it's automatically deployed to customer. 
+- Continuos deployment - when change passed the tests it's automatically deployed to customer. 
 
 ***
 ### Why initially it failed? 
