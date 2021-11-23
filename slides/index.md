@@ -20,7 +20,7 @@ About CI/CD on real example
 - New feature request (Weather)
 - Two external consultants hired for this job
 - They interpreted user story as they wanted to
-- No continuos integration or deployment. They used FileZilla to push the code to the cloud :smile:
+- No continuos integration or deployment. They used FileZilla to push the code to the cloud
 - Unsatisfied customers stared to quit agreements
 - Company started to have real problems...
 
