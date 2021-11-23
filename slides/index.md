@@ -102,6 +102,65 @@ to test it using A/B method on real users
 ***
 
 ### Summary
+* when one closely examines *agile* word then it resembles *continuous*
+* to be *agile* one needs to be able to deliver value - this cannot be done without being able
+to *continuously* release software
+* *continuous* releasing gives space to experimentation
+* sometimes to *continuously* release one needs to have some branching of the software
+* the best if done in the code, not via git branches (worth mentioning it isn't flawless) - here
+feature toggling kicks in
+
+---
+
+### Case from production trenches
+* in FI we had a support case for Agder today - assignments didn't got synced
+* turned out that the customer ordered big group (3500+ assignments)
+* hypothesis was put on using "old" endpoints not being able to handle this amount
+* FI sync has feature versioning in the code - we have V1 and V2 versions literally in the code
+
+---
+### Selectable via configuration
+```json5
+{
+    "maintenanceApiUrlEndpoint": "/job-groups/assigned/FIELD",
+    "fieldApiUrlEndpoint": "assignment-group",
+    "isNewSyncFlow": "true",
+    "fieldApiUrl": "https://field-maintenance-api-prod.azurewebsites.net/api/v2/teams/"
+}
+```
+
+---
+
+### Interpreted to give meaning
+```fsharp
+type AssignmentSynchronizationVersion = V1 | V2
+        
+let fromVersionedEndpointVariable (variable: VersionedEndpointVariables) =
+    match variable.IsNewSyncFlow with
+    | true -> V2
+    | false -> V1
+```
+
+---
+
+### Handled properly to bring versionable feature
+![versioning-feature](images/versioning-feature.png)
+
+---
+
+### Enabling v2 version of sync
+* it was done almost in "runtime"
+* immediately started working
+
+---
+
+### Why feature versioning?
+* it was Ellevio who was the main driver to have v2 version of sync
+* other customers were not ready
+* we didn't want to have two separate branches for v1 and v2 - only one pipeline (out of 9 in total) had to be versioned
+* having feature versioning in the code can be reviewed, we see history of changes, etc.
+* now we are able to roll out v2 even when entire pipeline is running
+
 
 ***
 ### The Reality of a Developer's Life 
